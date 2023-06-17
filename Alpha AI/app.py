@@ -13,7 +13,7 @@ def chat(query):
     global chatStr
     print(chatStr)
     openai.api_key = apikey
-    chatStr += f"Nadz: {query}\n Alpha: "
+    chatStr += f"User: {query}\n Alpha: "
     response = openai.Completion.create(
         model="text-davinci-003",
         prompt= chatStr,
